@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "package_b"
+version = "0.0.1"
+dependencies = [
+    "package_a @ git+ssh://git@github.com/RoboticElephant/test_package_setuptools_A"
+]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+#[project.scripts]
+#packa = "package_b.entrypoint:entrypoint"
