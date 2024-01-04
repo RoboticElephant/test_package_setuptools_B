@@ -1,1 +1,4 @@
 git+https://github.com/RoboticElephant/test_package_setuptools_A
+git+https://github.com/RoboticElephant/test_package_setuptools_C
+setuptools
+build

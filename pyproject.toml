@@ -4,9 +4,10 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "package_b"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
-    "package_a @ git+ssh://git@github.com/RoboticElephant/test_package_setuptools_A"
+    "package_a @ git+ssh://git@github.com/RoboticElephant/test_package_setuptools_A",
+    "package_c @ git+ssh://git@github.com/RoboticElephant/test_package_setuptools_C",
 ]
 
 [tool.setuptools.packages]
